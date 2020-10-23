@@ -1,6 +1,6 @@
 function binarySearch(array, value, start, end) {
     var start = start === undefined ? 0 : start;
-    var end = end === undefined ? array.length : end;
+    var end = end === undefined ? array.length - 1 : end;
 
     if (start > end) {
         return -1;
@@ -22,5 +22,5 @@ function binarySearch(array, value, start, end) {
 }
 
 let list = [3, 5, 6, 8, 11, 12, 14, 15, 17, 18];
-let seeking = 16;
+let seeking = 8;
 console.log(binarySearch(list, seeking));

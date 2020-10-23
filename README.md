@@ -7,3 +7,24 @@ To run any of these scripts, in terminal command line enter: `node script-name.j
 
 
 <br />
+
+## 1. How many searches?
+
+Given a sorted list of  `3, 5, 6, 8, 11, 12, 14, 15, 17, 18` and using the recursive binary search algorithm, identify the sequence of numbers that each recursive call will search to try and find `8`.
+
+>
+**`indexes: [start, end] / values: []`**
+1. `0, 10  -- 3, 5, 6, 8, 11, 12, 14, 15, 17, 18`
+2. `0, 4   -- 3, 5, 6, 8, 11`
+3. `3, 4   -- 8, 11`, `return 3` 
+
+
+<br />
+
+Likewise, to find 16. 
+
+>
+1. `0, 10   -- 3, 5, 6, 8, 11, 12, 14, 15, 17, 18` 
+2. `6, 10   -- 14, 15, 17, 18`
+3. `6, 7    -- 14, 15`
+4. `7, 7    -- 15` `return -1, aka null`

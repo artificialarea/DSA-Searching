@@ -7,8 +7,10 @@
     <title>Document</title>
 
     <style>
-        div { margin: 10px;}
+        body { margin: 20px; }
+        div { margin: 10px 10px 10px 0;}
         p { color: grey;}
+        input { margin-bottom: 10px;}
         .display { color: red }
     </style>
 
@@ -18,17 +20,14 @@
     <h1>Testing the efficiency of two search algorithms</h1>
     <p>Enter number and hit [return] to see if it's in the dataset </p>
 
-    <label for="linear">Linear Search</label>
-    <input class="linear" type="number" />
+    <label for="number">Find Number:</label>
+    <input class="number" type="number" />
     <div class="display" id="linear-display"></div>
-    
-    <label for="binary">Binary Search</label>
-    <input class="binary" type="number" />
     <div class="display" id="binary-display"></div>
 
-    <script src="./dataset.js"></script>
     <script src="./linear-search.js"></script>
     <script src="./binary-search.js"></script>
+    <script src="./dataset.js"></script>
 </body>
 
 </html>

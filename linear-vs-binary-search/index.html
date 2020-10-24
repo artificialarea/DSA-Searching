@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div { margin: 10px;}
+        p { color: grey;}
+        .display { color: red }
+    </style>
+
+</head>
+
+<body>
+    <h1>Testing the efficiency of two search algorithms</h1>
+    <p>Enter number and hit [return] to see if it's in the dataset </p>
+
+    <label for="linear">Linear Search</label>
+    <input class="linear" type="number" />
+    <div class="display" id="linear-display"></div>
+    
+    <label for="binary">Binary Search</label>
+    <input class="binary" type="number" />
+    <div class="display" id="binary-display"></div>
+
+    <script src="./dataset.js"></script>
+    <script src="./linear-search.js"></script>
+    <script src="./binary-search.js"></script>
+</body>
+
+</html>

@@ -22,9 +22,20 @@ Given a sorted list of  `3, 5, 6, 8, 11, 12, 14, 15, 17, 18` and using the recur
 
 <br />
 
-Likewise, to find 16. 
+Likewise, to find `16`. 
 
 >
 1. `0, 9   -- 3, 5, 6, 8, 11, 12, 14, 15, 17, 18` and `11 < 16`
 2. `5, 9   -- 12, 14, 15, 17, 18` and `15 < 16`
 3. `8, 9   -- 17, 18` and `return -1 (nope)`
+
+
+<br />
+
+## 2. Adding a UI
+
+Opted to do this in Vanilla JS instead of React.
+
+interface: **https://artificialarea.github.io/DSA-Searching/linear-vs-binary-search/**
+
+files: **[`linear-vs-binary-search`](https://github.com/artificialarea/DSA-Searching/blob/main/linear-vs-binary-search)** 
